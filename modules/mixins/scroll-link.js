@@ -120,7 +120,7 @@ export default (Component, customScroller) => {
           elemBottomBound = elemTopBound + cords.height;
         }
 
-        let offsetY = y - this.props.offset;
+        let offsetY = y + 60;
         isInside = (offsetY >= Math.floor(elemTopBound) && offsetY < Math.floor(elemBottomBound));
         isOutside = (offsetY < Math.floor(elemTopBound) || offsetY >= Math.floor(elemBottomBound));
       }
